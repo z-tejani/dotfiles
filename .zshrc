@@ -79,6 +79,9 @@ eval "$(fzf --zsh)"
 # Add zoxide shell integratioon
 eval "$(zoxide init --cmd cd zsh)"
 
+# Add thefuck shell integration
+eval $(thefuck --alias)
+
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/zain/.lmstudio/bin"
 # End of LM Studio CLI section

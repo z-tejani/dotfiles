@@ -1,0 +1,10 @@
+# Ignore conf directory
+^conf
+
+# Restore default ignores (Safety)
+\.git
+\.gitignore
+\.gitmodules
+\.DS_Store
+.*~
+\#.*\#
