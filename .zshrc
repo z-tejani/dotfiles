@@ -53,9 +53,6 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # End zinit config --------------
 
 
-# Added by Antigravity
-export PATH="/Users/zain/.antigravity/antigravity/bin:$PATH"
-
 
 # aliases
 alias bu="brew update; brew upgrade; brew autoremove"
@@ -72,6 +69,11 @@ alias gam="git commit -a -m"
 alias gm="git commit -m"
 alias subup="git submodule update --init --recursive --remote"
 alias t="tmux"
+
+cx() {
+  cd "$1" || return
+  ls -l
+}
 
 # Add fzf shell integration
 eval "$(fzf --zsh)"
