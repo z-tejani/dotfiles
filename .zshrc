@@ -27,7 +27,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Add zsh plugins
-zinit light zsh-users/zsh-syntax-highlighting
+#zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light Aloxaf/fzf-tab
 
@@ -70,6 +70,7 @@ alias gam="git commit -a -m"
 alias gm="git commit -m"
 alias subup="git submodule update --init --recursive --remote"
 alias t="tmux"
+alias sk="ssh kali@kali"
 
 cx() {
   cd "$1" || return
