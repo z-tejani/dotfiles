@@ -58,6 +58,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # aliases
 alias bu="brew update; brew upgrade; brew autoremove"
 alias z="zoxide"
+alias cat="bat"
+alias find="fd"
 alias ls="ls --color"
 alias ll="ls -al"
 alias wttr="curl wttr.in"
@@ -70,7 +72,11 @@ alias gam="git commit -a -m"
 alias gm="git commit -m"
 alias subup="git submodule update --init --recursive --remote"
 alias t="tmux"
+alias gg="gemini"
+alias oc="opencode"
 alias sk="ssh kali@kali"
+alias yt="yt-dlp"
+alias qf='rg --color=always --line-number --no-heading --smart-case "" | fzf --ansi --delimiter : --preview "bat --style=full --color=always --highlight-line {2} {1}"'
 
 cx() {
   cd "$1" || return
