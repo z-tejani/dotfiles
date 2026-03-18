@@ -1,3 +1,6 @@
+# Ignore the stow ignore
+\.stow.*
+
 # Ignore conf directory
 ^conf
 
