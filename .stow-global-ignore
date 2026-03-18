@@ -8,3 +8,6 @@
 \.DS_Store
 .*~
 \#.*\#
+
+# Ignore the README
+README.md
