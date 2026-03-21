@@ -1,5 +1,5 @@
 # Ignore the stow ignore
-\.stow.*
+\.stow-global-ignore
 
 # Ignore conf directory
 ^conf
