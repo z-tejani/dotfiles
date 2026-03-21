@@ -3,6 +3,7 @@
 # Flag vars for OSs
 OS_LINUX=false
 OS_MAC=false
+NEW=true
 
 usage() {
     echo "Usage: $0 [-l|--linux] [-m|--mac]"
@@ -19,6 +20,8 @@ while [[ $# -gt 0 ]]; do
       OS_MAC=true
       shift
       ;;
+    -n|--new)
+      NEW=true
     -h|--help)
       usage
       ;;
@@ -35,6 +38,10 @@ if [ "$OS_LINUX" = true ]; then
     cd linux
     stow -t ~ */
     cd ..
+
+    if [ "$NEW" = true ]; then
+      echo "Setting up as new..."
+    fi
 fi
 
 if [ "$OS_MAC" = true ]; then
@@ -42,4 +49,9 @@ if [ "$OS_MAC" = true ]; then
     cd mac
     stow -t ~ */
     cd ..
+
+    if [ "$NEW" = true ]; then
+      echo "Setting up as new..."
+      ./brewSetup.sh
+    fi
 fi
