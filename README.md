@@ -38,3 +38,14 @@ This will create symbolic links in `~/` pointing to the files in `~/dotfiles/` (
   ```bash
   stow -D .
   ```
+
+## Stowing for Each OS Type
+```bash
+# For Linux
+cd dotfiles/linux
+stow -t ~ */
+
+#for Mac
+cd dotfiles/mac
+stow -t ~ */
+```
