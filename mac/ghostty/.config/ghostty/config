@@ -1,5 +1,4 @@
 # Ghostty Config
-##  Generator Site: https://ghostty.zerebos.com/
 
 # My Themes
 #theme = iTerm2 Tango Dark
@@ -8,7 +7,8 @@
 #theme = Ayu
 #theme = Nvim Dark
 
-
+window-width = 100
+window-height = 30
 clipboard-read = allow
 window-padding-x = 5
 window-padding-y = 5
@@ -43,4 +43,4 @@ palette = 15=#bac2de
 font-size = 15
 font-family = MesloLGM Nerd Font
 mouse-hide-while-typing = true
-macos-titlebar-style = hidden
+# macos-titlebar-style = hidden

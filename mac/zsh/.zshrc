@@ -109,3 +109,6 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Add thefuck shell integration
 eval "$(thefuck --alias)"
+
+# Start with fastfetch
+fastfetch
