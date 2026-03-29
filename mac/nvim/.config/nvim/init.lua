@@ -802,10 +802,10 @@ require('lazy').setup({
         'vimdoc',
         'cpp',
         'python',
-        'golang',
+        'go',
         'rust',
         'javascript',
-        'makefile',
+        'make',
       }
       require('nvim-treesitter').install(parsers)
       vim.api.nvim_create_autocmd('FileType', {
