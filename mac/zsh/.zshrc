@@ -74,7 +74,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # ------------------------------------------------------------------------------
 
 # Aliases
-alias bu="brew update; brew upgrade --greedy; brew autoremove"
+alias bu="brew update; brew upgrade --greedy; brew autoremove; mas update"
 alias z="zoxide"
 alias cat="bat"
 alias find="fd"
