@@ -10,7 +10,7 @@
 
 # Appearance Modifiers
 theme = Catppuccin Mocha
-background-opacity = 0.8
+background-opacity = 0.9
 faint-opacity = 0.51
 background = #1e1e2e
 foreground = #cdd6f4

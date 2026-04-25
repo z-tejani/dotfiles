@@ -8,23 +8,29 @@
         "baseURL": "http://localhost:1234/v1"
       },
       "models": {
+        "deepseek-r1-distill-qwen-14b": {
+          "name": "Deepseek R1 Distill 14B"
+        },
+        "zai-org/glm-4.7-flash": {
+          "name": "GLM 4.7 Flash"
+        },
+        "zai-org/glm-4.6v-flash": {
+          "name": "GLM 4.6 Flash"
+        },
         "qwen3.5-9b-uncensored-hauhaucs-aggressive": {
           "name": "Qwen3.5 9B (Uncensored)"
-        },
-        "huihui-kimi-linear-reap-35b-a3b-instruct-abliterated": {
-          "name": "Kimi 35B (Abliterated)"
-        },
-        "huihui-nvidia-nemotron-nano-9b-v2-abliterated-i1": {
-          "name": "Nemotron Nano 9B"
         },
         "qwen3.5-27b-heretic": {
           "name": "Qwen3.5 27B Heretic"
         },
-        "granite-4.0-h-7b-heretic-i1": {
-          "name": "Granite 4.0 7B"
+        "gemma-4-e4b-it-obliterated": {
+          "name": "Gemma 4 E4B Obliterated"
+        },
+        "google/gemma-4-e2b": {
+          "name": "Gemma 4 E2B"
         },
         "openai-gpt-oss-20b-heretic-uncensored-neo-imatrix": {
-          "name": "OpenAI 20B NEO"
+          "name": "OpenAI GPT OSS 20B NEO"
         },
         "google/gemma-3-12b": {
           "name": "Gemma 3 12B"
