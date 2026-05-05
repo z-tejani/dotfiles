@@ -2,9 +2,12 @@
 set nocompatible
 
 " Change Colors
-colorscheme evening
+colorscheme elflord
 set background=dark
 set termguicolors
+set scrolloff=8
+"set signcolumn=yes
+"set colorcolumn=80
 
 " Setup netrw
 " Leader key
@@ -28,7 +31,21 @@ set encoding=utf-8
 
 " Set Relative Line Nums
 set relativenumber
+set number
 
+" Center Cursor
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" Add Splits Navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+
+set hidden	    " Allow switching buffers
 set hlsearch        " Highlight all search matches
 set incsearch       " Show matches as you type
 set ignorecase      " Ignore case when searching...
