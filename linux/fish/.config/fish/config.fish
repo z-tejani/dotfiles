@@ -12,7 +12,6 @@ set -gx PATH $PATH /home/zain/.lmstudio/bin
 
 # Aliases copied from ~/.bashrc (last definition wins).
 alias vi 'nvim'
-alias vim 'nvim'
 alias grep 'grep --color=auto'
 alias ls 'ls --color'
 alias ll 'ls -al'

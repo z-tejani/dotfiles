@@ -98,7 +98,11 @@ vim.diagnostic.config {
   virtual_lines = false, -- Text shows up underneath the line, with virtual lines
 
   -- Auto open the float, so you can easily read the errors when jumping with `[d` and `]d`
-  jump = { float = true },
+  jump = {
+    on_jump = function(_, bufnr)
+      vim.diagnostic.open_float { bufnr = bufnr, scope = 'cursor', focus = false }
+    end,
+  },
 }
 
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
@@ -859,6 +863,7 @@ require('lazy').setup({
   -- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
   -- you can continue same window with `<space>sr` which resumes last telescope search
 }, { ---@diagnostic disable-line: missing-fields
+  rocks = { enabled = false }, -- No configured plugins need LuaRocks.
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
