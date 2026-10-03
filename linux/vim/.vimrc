@@ -2,7 +2,6 @@
 set nocompatible
 
 " Change Colors
-colorscheme elflord
 set background=dark
 set termguicolors
 set scrolloff=8
