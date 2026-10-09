@@ -5,6 +5,7 @@ set nocompatible
 set background=dark
 set termguicolors
 set scrolloff=8
+colorscheme catppuccin
 "set signcolumn=yes
 "set colorcolumn=80
 
@@ -22,8 +23,13 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 
 " Enable syntax highlighting and filetype detection
+let g:c_functions = 1
+let g:c_function_pointers = 1
+let g:c_comment_strings = 1
 syntax on
 filetype plugin indent on
+" Remove background coloring
+highlight Normal guibg=NONE ctermbg=NONE
 
 " Use UTF-8 encoding
 set encoding=utf-8
