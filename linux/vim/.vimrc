@@ -15,6 +15,14 @@ let mapleader = " "
 
 " Keybinding
 nnoremap <leader>e :Lexplore<CR>
+nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>s :split<CR>
+nnoremap <leader>w :update<CR>
+nnoremap <leader>q :close<CR>
+nnoremap <leader>h :nohlsearch<CR>
+nnoremap <leader>= <C-w>=
+nnoremap <leader>o :FZF<CR>
 
 " Netrw tweaks
 let g:netrw_banner = 0
