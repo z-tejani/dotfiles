@@ -2,10 +2,10 @@
 set nocompatible
 
 " Change Colors
-colorscheme elflord
 set background=dark
 set termguicolors
 set scrolloff=8
+colorscheme elflord
 "set signcolumn=yes
 "set colorcolumn=80
 
@@ -15,6 +15,15 @@ let mapleader = " "
 
 " Keybinding
 nnoremap <leader>e :Lexplore<CR>
+nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>s :split<CR>
+nnoremap <leader>w :update<CR>
+nnoremap <leader>q :close<CR>
+nnoremap <leader>h :nohlsearch<CR>
+nnoremap <leader>= <C-w>=
+set rtp+=/opt/homebrew/opt/fzf
+nnoremap <leader>o :FZF<CR>
 
 " Netrw tweaks
 let g:netrw_banner = 0
@@ -23,8 +32,13 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 
 " Enable syntax highlighting and filetype detection
+let g:c_functions = 1
+let g:c_function_pointers = 1
+let g:c_comment_strings = 1
 syntax on
 filetype plugin indent on
+" Remove background coloring
+" highlight Normal guibg=NONE ctermbg=NONE
 
 " Use UTF-8 encoding
 set encoding=utf-8
