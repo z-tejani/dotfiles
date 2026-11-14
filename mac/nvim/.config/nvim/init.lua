@@ -1,1 +1,1 @@
-/home/zain/dotfiles/linux/nvim/.config/nvim/init.lua
+../../../../linux/nvim/.config/nvim/init.lua
