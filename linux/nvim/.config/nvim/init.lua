@@ -1065,6 +1065,12 @@ do
   vim.keymap.set('n', 'n', 'nzzzv', { desc = 'Next search result and center' })
   vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'Previous search result and center' })
 
+  -- Match the netrw display and file-opening settings from your old .vimrc.
+  vim.g.netrw_banner = 0
+  vim.g.netrw_liststyle = 3
+  vim.g.netrw_browse_split = 4
+  vim.g.netrw_altv = 1
+
   -- Built-in netrw is a separately loaded legacy plugin in recent Neovim.
   -- :packadd netrw uses the plugin bundled with Neovim; no download required.
   local function toggle_explorer()
